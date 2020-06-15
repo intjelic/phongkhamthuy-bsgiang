@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/_mixins.scss';
+
+$spacer: 0;
+
+$primary: #ff7b00;
+$secondary: #ffa600;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+$body-bg: white;
+$body-color: $gray-900;
+
+$font-family-base: 'Vollkorn', serif;
+
+$navbar-light-color: black;
+$navbar-light-hover-color: white;
+
+@import '~bootstrap/scss/bootstrap.scss';

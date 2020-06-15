@@ -1,3 +1,5 @@
+import 'bootstrap'
+import '@/assets/style.scss'
 import Vue from 'vue'
 import Website from './Website.vue'
 import router from './router'
