@@ -1,13 +1,46 @@
 <template>
-  <div>
-    <span>Navigation bar: </span>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/services">Services</router-link> |
-    <router-link to="/questions">Questions</router-link> |
-    <router-link to="/news">News</router-link> |
-    <router-link to="/shop">Shop</router-link> |
-    <a href="https://www.facebook.com/thuygianghiahealthpet">Facebook</a>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <router-link id="logo" class="navbar-brand" to="/">
+      <img
+        src="https://palmsvetgroup.com.au/wp-content/themes/palms/images/pvgLogoNew.png"
+        height="120px"
+      />
+    </router-link>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#menu"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <router-link class="nav-link px-4" to="/services">Services</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link px-4" to="/questions">Questions</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link px-4" to="/news">News</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link px-4" to="/shop">Shop</router-link>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link bg-primary text-white"
+            href="https://www.facebook.com/thuygianghiahealthpet"
+          >Facebook</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -16,5 +49,51 @@ export default {
 }
 </script>
 
-<style>
+<style style="scss" scoped>
+/*
+   The implementation of the navigation bar is complex because it has to display the 'burger' button
+   to open and close the menu. The strategy is to start from a default Bootstrap navigation bar
+   which does the heavy lifting, and instead tweak the CSS on normal screens.
+*/
+@media (min-width: 992px) {
+  nav {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+
+  #logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    z-index: 2;
+  }
+
+  #menu {
+    flex-grow: 0;
+  }
+
+  .nav-item {
+    height: 80px;
+    display: flex;
+  }
+
+  .nav-link {
+    padding-top: 35px;
+  }
+}
+
+.nav-item > a:hover,
+.nav-item > a:focus {
+  background-color: #ffa600;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  background-color: orange;
+}
 </style>
