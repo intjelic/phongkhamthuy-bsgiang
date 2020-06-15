@@ -1,7 +1,11 @@
 <template>
   <div id="website">
-    <navigation-bar/>
-    <router-view/>
+    <navigation-bar />
+    <!-- the 'diagonal seperator' which is only shown on regular screens -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon fill="white" points="0 0 100 0 0 10" />
+    </svg>
+    <router-view />
   </div>
 </template>
 
@@ -17,24 +21,19 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+svg {
+  position: absolute;
+  z-index: 1;
+
+  display: block;
+  width: 100%;
+  height: 70px;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+// the 'diagonal seperator' isn't shown on small screens
+@media (max-width: 992px) {
+  svg {
+    display: none;
   }
 }
 </style>
