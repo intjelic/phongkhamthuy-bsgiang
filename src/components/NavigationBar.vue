@@ -69,7 +69,7 @@ export default {
     position: absolute;
     left: 30px;
     top: 30px;
-    z-index: 2;
+    z-index: 3;
   }
 
   #menu {
