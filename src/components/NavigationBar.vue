@@ -21,22 +21,22 @@
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link class="nav-link px-4" to="/services">Services</router-link>
+          <router-link class="nav-link px-4 font-weight-bold" to="/services">SERVICES</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link px-4" to="/questions">Questions</router-link>
+          <router-link class="nav-link px-4" to="/questions">QUESTIONS</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link px-4" to="/news">News</router-link>
+          <router-link class="nav-link px-4" to="/news">NEWS</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link px-4" to="/shop">Shop</router-link>
+          <router-link class="nav-link px-4" to="/shop">SHOP</router-link>
         </li>
         <li class="nav-item">
           <a
-            class="nav-link bg-primary text-white"
+            class="nav-link facebook-nav-link bg-primary text-white"
             href="https://www.facebook.com/thuygianghiahealthpet"
-          >Facebook</a>
+          ><img src="@/assets/facebook.svg" width="40px"></a>
         </li>
       </ul>
     </div>
@@ -84,6 +84,14 @@ export default {
   .nav-link {
     padding-top: 35px;
   }
+
+  .facebook-nav-link {
+    padding-top: 25px;
+  }
+}
+
+.nav-link {
+    font-family: "Acme";
 }
 
 .nav-item > a:hover,
