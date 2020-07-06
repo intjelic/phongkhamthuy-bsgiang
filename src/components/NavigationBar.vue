@@ -21,7 +21,10 @@
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link class="nav-link px-4 font-weight-bold" to="/services">SERVICES</router-link>
+          <router-link class="nav-link px-4" to="/">HOME</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link px-4" to="/services">SERVICES</router-link>
         </li>
         <li class="nav-item">
           <router-link class="nav-link px-4" to="/questions">QUESTIONS</router-link>
