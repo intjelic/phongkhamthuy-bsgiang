@@ -1,12 +1,19 @@
 <template>
-  <div>
-    <div class="row" style="height: 550px;">
-      <img
-        id="image"
-        src="https://palmsvetgroup.com.au/wp-content/uploads/2015/07/slider-puppies.jpg"
-      />
-      <div id="left-side" class="col-6">Left</div>
-      <div id="right-side" class="col-6">Right</div>
+  <div style="height: 550px;">
+    <div v-if="$mq == 'desktop'">
+      <div id="background">
+        <div id="right-square"></div>
+      </div>
+      <div id="foreground" class="container">
+        <img
+          id="image"
+          src="https://palmsvetgroup.com.au/wp-content/uploads/2015/07/slider-puppies.jpg"
+        />
+      </div>
+    </div>
+    <div v-else>
+      <div class="bg-primary" style="height: 225px;"></div>
+      <div class="bg-secondary" style="height: 225px;"></div>
     </div>
   </div>
 </template>
@@ -18,19 +25,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#image {
+#background {
   position: absolute;
-  z-index: 1;
-
-  width: 1200px;
-  left: 400px;
+  width: 100%;
+  height: 550px;
+  background-color: rgb(21, 105, 142);
 }
 
-#left-side {
-  background-color: #ff7b00;
+#right-square {
+  width: 50%;
+  left: 50%;
+  height: 550px;
+  background-color: rgb(37, 170, 227);
 }
 
-#right-side {
-  background-color: #ffa600;
+#foreground {
+  position: relative;
+}
+
+#image {
+  width: 100%;
 }
 </style>
