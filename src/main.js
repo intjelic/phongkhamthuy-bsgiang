@@ -1,11 +1,20 @@
 import 'bootstrap'
 import '@/assets/style.scss'
 import Vue from 'vue'
+import VueMq from 'vue-mq'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import Website from './Website.vue'
 import router from './router'
 
 Vue.config.productionTip = false
+
+Vue.use(VueMq, {
+  breakpoints: {
+    tablet: 992,
+    desktop: Infinity
+  },
+  defaultBreakpoint: 'tablet'
+})
 
 Vue.use(VueGoogleMaps, {
   load: {
