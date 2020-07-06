@@ -99,12 +99,12 @@ export default {
 
 .nav-item > a:hover,
 .nav-item > a:focus {
-  background-color: #ffa600;
+  background-color: rgb(21, 105, 142);
 }
 
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
-  background-color: orange;
+  background-color: rgb(21, 105, 142);
 }
 </style>
