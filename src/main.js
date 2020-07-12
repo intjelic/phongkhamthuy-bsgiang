@@ -5,6 +5,7 @@ import VueMq from 'vue-mq'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import Website from './Website.vue'
 import router from './router'
+import i18n from './i18n'
 
 Vue.config.productionTip = false
 
@@ -25,5 +26,6 @@ Vue.use(VueGoogleMaps, {
 
 new Vue({
   router,
+  i18n,
   render: h => h(Website)
 }).$mount('#website')

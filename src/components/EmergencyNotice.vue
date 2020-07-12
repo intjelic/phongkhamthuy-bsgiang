@@ -1,8 +1,8 @@
 <template>
   <div id="emergency-notice">
     <div class="container text-center py-4">
-      <span class="text-primary h1">AFTER HOURS EMERGENCY?</span>
-      <span class="text-white h1 ml-4">PH 4779 5222</span>
+      <span class="text-primary h1">{{ $t("emergencyNotice.text") }}</span>
+      <span class="text-white h1 ml-4">{{ $t("emergencyNotice.phoneNumber") }}</span>
     </div>
   </div>
 </template>

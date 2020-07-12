@@ -21,19 +21,19 @@
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link class="nav-link px-4" to="/">HOME</router-link>
+          <router-link class="nav-link px-4 text-uppercase" to="/">{{ $t("navigationBar.home") }}</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link px-4" to="/services">SERVICES</router-link>
+          <router-link class="nav-link px-4 text-uppercase" to="/services">{{ $t("navigationBar.services") }}</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link px-4" to="/questions">QUESTIONS</router-link>
+          <router-link class="nav-link px-4 text-uppercase" to="/questions">{{ $t("navigationBar.questions") }}</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link px-4" to="/news">NEWS</router-link>
+          <router-link class="nav-link px-4 text-uppercase" to="/news">{{ $t("navigationBar.news") }}</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link px-4" to="/shop">SHOP</router-link>
+          <router-link class="nav-link px-4 text-uppercase" to="/shop">{{ $t("navigationBar.shop") }}</router-link>
         </li>
         <li class="nav-item">
           <a
