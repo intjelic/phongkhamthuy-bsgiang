@@ -1,8 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light">
-    <router-link id="logo" class="navbar-brand" to="/">
+    <router-link id="logo" class="navbar-brand ml-0 ml-lg-4" to="/">
       <img
-        src="https://palmsvetgroup.com.au/wp-content/themes/palms/images/pvgLogoNew.png"
+        src="@/assets/logo.svg"
         height="120px"
       />
     </router-link>

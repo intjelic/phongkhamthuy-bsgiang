@@ -27,7 +27,7 @@ svg {
 
   display: block;
   width: 100%;
-  height: 70px;
+  height: 100px;
 }
 
 // the 'diagonal seperator' isn't shown on small screens
