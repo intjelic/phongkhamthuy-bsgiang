@@ -7,8 +7,11 @@ const en = {
     shop: 'Shop'
   },
   emergencyNotice: {
-    text: 'AFTER HOURS EMERGENCY?',
-    phoneNumber: 'PH 4779 5222'
+    text: 'ERMEGENCY HOTLINE',
+    phoneNumber: '+84 919 250 389'
+  },
+  pageFooter: {
+
   }
 }
 

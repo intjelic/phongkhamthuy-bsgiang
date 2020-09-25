@@ -4,7 +4,7 @@
       <div class="row py-4">
         <div class="col-12 col-md-6 col-lg-4">
           <GmapMap
-            :center="{lat:10, lng:10}"
+            :center="{lat: 15.991190, lng: 108.137060}"
             :zoom="7"
             map-type-id="terrain"
             style="width: 350px; height: 350px; margin: auto;"
@@ -22,19 +22,18 @@
         <div
           class="col-12 col-md-6 col-lg-5 my-5 d-flex flex-column justify-content-around text-center text-md-left"
         >
-          <span class="h4">Hermit Park Vets</span>
+          <span class="h4">Dr. Giang Vet Clinic</span>
           <span class="my-3">
-            223 Charters Towers Rd
-            <br />Hermit Park Qld 4812
-            <br />Phone: (07) 4779 5222
+            131 Van Tien Dung street
+            <br />Hoa Xuan, Cam Le, Da Nang, Viet Nam
+            <br />Phone: +84 919 250 389
           </span>
-          <span>Email: hermitpark@palmsvetgroup.com.au</span>
+          <span>Email: ngducgiang984@gmail.com</span>
           <span class="my-3">
-            Mon, Tues: 8am – 5.30pm
-            <br />Wed: 8am – 6.00pm
-            <br />Thurs, Fri: 8am – 5.30pm
-            <br />Sat: 8.30am – 5.00pm
-            <br />Sun: 10am – 12.00pm
+            Monday, Tuesday: 8am – 7pm
+            <br />Wednesday: 8am – 6pm
+            <br />Thursday, Friday: 8am – 7pm
+            <br />Saturday and Sunday: 8am – 7pm
           </span>
         </div>
         <div
