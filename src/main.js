@@ -19,7 +19,7 @@ Vue.use(VueMq, {
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyA257_ta9LCveTnvVe6GFfqLUtTDquTErQ',
+    key: 'AIzaSyDZylp05FkC-sEas440_RanZK2iEqqbdvw',
     libraries: 'visualization'
   }
 })
